@@ -1,0 +1,1 @@
+# vscode-copy-combined-markdown
