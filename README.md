@@ -1,34 +1,32 @@
 # Copy Combined Markdown
 
-Copy Combined Markdown is a Visual Studio Code plugin that allows you to select multiple files, right-click them, and generate a combined markdown file containing the content of all the selected files. This plugin is designed to provide context for ChatGPT, a powerful language model.
+Copy Combined Markdown is a Visual Studio Code plugin that allows you to select multiple files and directories, right-click them, and copy their contents in a combined markdown format to the clipboard. This plugin is particularly useful for providing context for ChatGPT or for consolidating information from multiple sources.
 
 ## Features
 
-- Select multiple files in the Visual Studio Code explorer.
-- Right-click the selected files and choose the "Copy Combined Markdown" option.
-- A new markdown file will be generated, containing the combined content of all the selected files.
-- Use the generated markdown file to provide context for ChatGPT or any other use case that requires consolidated information.
+- Select multiple files and directories in the Visual Studio Code explorer.
+- Right-click the selection and choose the "Copy Combined Markdown" option.
+- The content of the selected files is combined into markdown format, with language-specific code blocks, and copied to the clipboard.
+- Ideal for aggregating content for ChatGPT or for documentation purposes.
 
 ## Installation
 
 1. Launch Visual Studio Code.
-2. Go to the Extensions view by clicking on the square icon on the left sidebar or by pressing `Ctrl+Shift+X`.
-3. Search for "Copy Combined Markdown" in the Extensions view search bar.
-4. Click on the "Install" button next to the "Copy Combined Markdown" extension.
-5. Once installed, the extension will be ready to use.
+2. Open the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`).
+3. Search for "Copy Combined Markdown".
+4. Click "Install" next to the extension.
 
 ## Usage
 
-1. Open the Visual Studio Code explorer.
-2. Select multiple files by holding down the `Ctrl` (Windows/Linux) or `Cmd` (Mac) key and clicking on the desired files.
-3. Right-click on the selected files.
-4. From the context menu, choose the "Copy Combined Markdown" option.
-5. A new markdown file will be created in the same directory as the selected files, containing the combined content of all the selected files.
+1. In Visual Studio Code explorer, select files and directories.
+2. Right-click the selection.
+3. Click "Copy Combined Markdown".
+4. The combined content is now on your clipboard in markdown format, ready to be pasted wherever needed.
 
 ## Feedback and Contributions
 
-We welcome feedback and contributions to improve the Copy Combined Markdown plugin. If you encounter any issues or have suggestions for new features, please visit the [GitHub repository](https://github.com/skaramicke/vscode-copy-combined-markdown) and open an issue.
+Feedback and contributions are welcome. If you have any suggestions or encounter issues, please visit the [GitHub repository](https://github.com/your-github-username/your-repo-name) and create an issue or pull request.
 
 ## License
 
-This plugin is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This plugin is available under the [MIT License](https://opensource.org/licenses/MIT).
