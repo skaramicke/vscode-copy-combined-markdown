@@ -25,7 +25,7 @@ Copy Combined Markdown is a Visual Studio Code plugin that allows you to select 
 
 ## Feedback and Contributions
 
-Feedback and contributions are welcome. If you have any suggestions or encounter issues, please visit the [GitHub repository](https://github.com/your-github-username/your-repo-name) and create an issue or pull request.
+Feedback and contributions are welcome. If you have any suggestions or encounter issues, please visit the [GitHub repository](https://github.com/skaramicke/vscode-copy-combined-markdown) and create an issue or pull request.
 
 ## License
 
