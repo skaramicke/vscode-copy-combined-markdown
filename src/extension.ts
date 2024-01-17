@@ -41,7 +41,27 @@ export function activate(context: vscode.ExtensionContext) {
                 .openTextDocument(path)
                 .then((doc) => doc.languageId);
               const content = fs.readFileSync(path, "utf8");
-              return `${path}\n\`\`\`\`${languageId}\n${content}\n\`\`\`\`\n`;
+
+              // Count the longest sequence of '```' in the content
+              // and add one more to the end of the string
+              const longestSequence = content
+                .match(/`{3,}/g)
+                ?.reduce((acc, cur) => {
+                  return cur.length > acc.length ? cur : acc;
+                });
+              const numberOfBackticks = longestSequence
+                ? longestSequence.length + 1
+                : 3;
+              const backticks = "`".repeat(numberOfBackticks);
+
+              // Replace the project root path with a relative path
+              const workspaceFolders = vscode.workspace.workspaceFolders;
+              const workspaceFolder = workspaceFolders
+                ? workspaceFolders[0].uri.fsPath
+                : "";
+              const relativePath = path.replace(workspaceFolder, ".");
+
+              return `${relativePath}\n${backticks}${languageId}\n${content}\n${backticks}\n`;
             } else {
               return ""; // Return an empty string or handle directories differently if needed
             }
